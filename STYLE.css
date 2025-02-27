@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.item {
+    width: 400px; /* Adjust size */
+    height: 300px; /* Adjust size */
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 10px;
+    text-align: center;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    word-wrap: break-word;
+}
+
+.item img {
+    max-width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+}
+
+.item h2 {
+    max-width: 100%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+.item p {
+    color: gray;
+}
+
+.item .price {
+    font-weight: bold;
+    color: #333;
+}
